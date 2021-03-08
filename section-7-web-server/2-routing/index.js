@@ -7,8 +7,8 @@ const server = http.createServer((req, res) => {
 
     if(path == '/') {
         res.end('Home Page')
-    } else if(path == '/about') {
-        res.end('About Page')
+    } else if(path == '/product') {
+        res.end('Product Page')
     } else {
         res.writeHead(404, {
             'Content-type' : 'text/html'
