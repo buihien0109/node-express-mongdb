@@ -1,0 +1,3 @@
+const EVENT_DO_HOMEWORK = 'EVENT_DO_HOMEWORK';
+
+module.exports = EVENT_DO_HOMEWORK
