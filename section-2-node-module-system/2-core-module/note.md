@@ -1,0 +1,16 @@
+## Core module (build-in module)
+- Đây là nhưng modules được NodeJS tích hợp sẵn, nghĩa là chỉ cần cài đặt NodeJS là bạn có thể gọi ra sử dụng chúng
+- Các bạn có thể xem danh sách các modules đó tại đây: https://www.w3schools.com/nodejs/ref_modules.asp
+- Danh sách các core module quan trọng của nodejs :
+    - http : 
+        - http module bao gồm các classes, methods and events để tạo ra Node.js http server.
+    - url : 
+        - url module bao gồm các methods để phân tích cú pháp URL.
+    - querystring : 
+        - querystring module bao gồm các methods để xử lý với query string.
+    - path : 
+        - querystring module bao gồm các methods để làm việc với file paths.
+    - fs : 
+        - fs module bao gồm các classes, methods, and events để làm việc với file I/O.
+    - util : 
+        - util module bao gồm functions hữu ích cho các lập trình viênc.

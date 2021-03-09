@@ -1,25 +1,24 @@
 const http = require('http');
+const url = require('url');
 const fs = require('fs');
 
 const data = fs.readFileSync(`${__dirname}/data/data.json`, 'utf8');
-const dataObj = JSON.parse(data)
 
 const server = http.createServer((req, res) => {
-    let path = req.url;
-    console.log(path);
+    const { pathname } = url.parse(req.url, true);
+    console.log(pathname);
 
-    if (path == '/') {
+    if (pathname === '/' || pathname === '/overview') {
         res.end('Home Page');
-    } else if (path == '/product') {
-        res.end('Product Page');
-    } else if (path == '/api') {
+    } else if (pathname === '/laptop') {
+        res.end('Laptop Page');
+    } else if (pathname === '/api') {
         // fs.readFile(`${__dirname}/data/data.json`, 'utf-8', (err, data) => {
-        //     const productData = JSON.parse(data)
         //     res.writeHead(200, { 'Content-type' : 'application/json'})
         //     res.end(data);
         // })
 
-        res.writeHead(200, { 'Content-type' : 'application/json'})
+        res.writeHead(200, { 'Content-type': 'application/json' });
         res.end(data);
     } else {
         res.writeHead(404, {
