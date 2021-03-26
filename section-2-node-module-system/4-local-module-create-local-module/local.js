@@ -1,11 +1,4 @@
-let user = {
-    name: 'Nguyễn Văn A',
-    email: 'abc@gmail.com',
-    age: 20,
-};
-
-console.log(user)
-
+// Tính tổng
 function sumArr(arr) {
     let sum = 0;
     for (let i = 0; i < arr.length; i++) {
@@ -14,11 +7,13 @@ function sumArr(arr) {
     return sum;
 }
 
-let numbers = [1,2,3,4,5];
-console.log(sumArr(numbers))
-
+// Lấy ngẫu nhiên một giá trị trong mảng
 function randomNumber(arr) {
-    return arr[Math.floor(Math.random() * arr.length)];
+    let index = Math.floor(Math.random() * arr.length);
+    return arr[index];
 }
-console.log(randomNumber(numbers))
 
+let numbers = [1, 2, 3, 4];
+
+console.log(sumArr(numbers));
+console.log(randomNumber(numbers));

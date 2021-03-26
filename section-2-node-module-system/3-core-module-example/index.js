@@ -1,6 +1,7 @@
 const fs = require('fs');
 const http = require('http');
 
+// Module fs
 // Đọc file
 fs.readFile('./text.txt', 'utf-8', (err, data) => {
     console.log(data);
@@ -13,6 +14,7 @@ fs.writeFile('./output.txt', string, 'utf-8', (err) => {
     console.log('Ghi file thành công');
 });
 
+// Module http
 // Tạo server đơn giản
 const server = http.createServer((req, res) => {
     fs.readFile('./text.txt', 'utf-8', (err, data) => {
@@ -23,4 +25,6 @@ const server = http.createServer((req, res) => {
     });
 });
 
-server.listen(3000);
+server.listen(3000, () => {
+    console.log('Server listening on port 3000');
+});

@@ -1,17 +1,9 @@
 console.log('Hello world');
 
-// Variable
-const a = [1,2,3,4,5]
-console.log(a)
+const http = require('http');
 
-// Loop
-a.forEach(number => {
-    console.log(number)
+const server = http.createServer((req, res) => {
+    res.end('Hello world')
 })
 
-// Function
-function sum(a,b) {
-    return a + b
-}
-
-console.log(sum(3,4))
+server.listen(3000)

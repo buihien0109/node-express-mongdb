@@ -13,4 +13,4 @@
     - fs : 
         - fs module bao gồm các classes, methods, and events để làm việc với file I/O.
     - util : 
-        - util module bao gồm functions hữu ích cho các lập trình viênc.
+        - util module bao gồm functions hữu ích cho các lập trình viên.

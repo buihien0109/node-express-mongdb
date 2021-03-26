@@ -6,5 +6,5 @@ let text = fs.readFileSync('./txt/input.txt', 'utf-8');
 console.log(text);
 
 // Viết dữ liệu vào file khác
-let string = 'Hello world'
-fs.writeFileSync('./txt/output.txt', string, 'utf-8');
+let data = 'Hello world'
+fs.writeFileSync('./txt/output.txt', data, 'utf-8');
